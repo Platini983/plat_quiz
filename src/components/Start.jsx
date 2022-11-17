@@ -8,15 +8,21 @@ export default function Start({ setUsername }) {
   };
 
   return (
-    <div className="start">
-      <input
-        className="startInput"
-        placeholder="enter your name"
-        ref={inputRef}
-      />
-      <button className="startButton" onClick={handleClick}>
-        Start
-      </button>
-    </div>
+      <div className="main_start">
+        <div className="start_header">
+          <h1> WHAT DO YOU KNOW </h1>
+        </div>
+        <div className="start">
+          <input
+           className="startInput"
+           placeholder="Please! Enter your Name"
+           ref={inputRef}
+          />
+          <button className="startButton" onClick={handleClick}>
+            Start
+          </button>
+        </div>
+      </div>
+    
   );
 }

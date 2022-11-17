@@ -49,20 +49,13 @@ export default function Trivia({
           setQuestionNumber((prev) => prev + 1);
           setSelectedAnswer(null);
         });
-        // setTimeout(() => {
-        //   setQuestionNumber((prev) => prev + 1);
-        //   setSelectedAnswer(null);
-        // }, 1000);
       } else {
         wrongAnswer();
         delay(1000, () => {
           setTimeOut(true);
         });
-        // setTimeout(() => {
-        //   setTimeOut(true);
-        // }, 1000);
+        
       }
-    // }, 5000);
       })
   };
   return (
