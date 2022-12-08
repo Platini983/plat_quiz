@@ -10,7 +10,7 @@ export default function Start({ setUsername }) {
   return (
       <div className="main_start">
         <div className="start_header">
-          <h1> WHAT DO YOU KNOW </h1>
+          <h1> WHAT DO YOU KNOW. <br /> CURRENT AFFAIR OF C.O.P </h1>
         </div>
         <div className="start">
           <input

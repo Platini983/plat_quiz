@@ -3,7 +3,8 @@
   max-width: 100%;
   display: flex;
   color: white;
-  background-color: #09094c;
+  background-color: #5555eda6;
+  background-image: url("./assets/pente.png");
 }
 
 .main{
@@ -16,7 +17,7 @@
 
 .pyramid{
     width: 25%;
-    background-color: #09094c;
+    background-color:#09094c;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -166,10 +167,11 @@
     left: 0;
     right: 0;
     margin: auto;
+    font-size: 20px;
   }
 
   .main_start {
-    width: 250px;
+    /* width: 250px; */
     height: 100px;
     display: flex;
     flex-direction: column;
@@ -188,6 +190,7 @@
     text-align: center;
     font-size: 18px;
     margin-bottom: 5px;
+    
   }
   
   .start {
@@ -220,3 +223,57 @@
     font-weight: 500;
     margin-top: 5px;
   }
+
+
+
+
+
+  /* ###################### MEDIA QUERIES (SMALL SCREEN) ################### */
+  :right {
+    --container-width-sm: 90%;
+  }
+
+@media screen and (max-width: 600px) {
+    .app{
+        width: var(--container-width-sm);
+    }
+
+    .main{
+      width: 60%;
+    }
+
+    .pyramid {
+      width: 40%;
+    }
+
+    .moneyListItemNumber {
+      width: 20%;
+      font-size: 15px;
+      font-weight: 100;
+      margin-right: 6px;
+    }
+
+    .moneyListItemAmount {
+      font-size: 17px;
+      font-weight: 200;
+    }
+
+    .top {
+      height: 30%;
+    }
+
+    .bottom {
+      height: 70%;
+    }
+
+    .question .answer {
+      font-size: 18px;
+    }
+
+    .start_header {
+      font-size: 16px;
+    }
+
+
+    
+}
